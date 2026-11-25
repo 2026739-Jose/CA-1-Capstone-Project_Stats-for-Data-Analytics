@@ -1,0 +1,22 @@
+# Global Digital Transformation Readiness (CA2)
+
+A longitudinal statistical assessment of digital infrastructure and technology development across countries and regions (`2010–2024`), framed from a **Project Management** perspective to support market prioritization and risk assessment for international digital transformation projects.
+
+## Data Source & Reproducibility
+* **Primary Source:** World Bank – World Development Indicators (WDI)
+* **API Endpoint:** `https://api.worldbank.org/v2` (open access, no authentication required)
+* **Data Portal:** https://databank.worldbank.org/source/world-development-indicators
+* **Time Span:** `2010–2024` (annual observations, with comparative five-year windows `2010–2014` and `2020–2024`)
+
+Raw data files (`wdi_indicators_raw.csv` and `country_metadata.csv`) are generated reproducibly by running `notebooks/CA2_Digital_Transformation.ipynb` and stored in `data/raw/`.
+
+## Repository Structure (`CA2/`)
+```text
+CA2/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── notebooks/
+│   └── CA2_Digital_Transformation.ipynb
+├── references/
+└── README.md
